@@ -1,0 +1,80 @@
+:root{
+    --pink: rgb(255, 122, 145);
+    --pinkbg: rgba(255, 136, 156, 0.2);
+    --text: #222;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*GENERAL CSS*/
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+}
+
+/*CUSTOM*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--pinkbg);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+nav .logo{
+    border: 2px solid var(--pink);
+    padding: 10px;
+    background-color: var(--pinkbg);
+    font-size: 1rem;
+    font-weight: bolder;
+}
+nav .logo a{
+    color: var(--text);
+}
+nav .nav-menu{
+    list-style: none;
+    display: flex;
+    column-gap: 10px;
+}
+.nav-menu li a{
+    color: var(--pink);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+nav .bunny{
+    height: 100px;
+    width: 100px;
+}
+.bunny img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(/assets/fonts/Poppins-Regular.ttf) format('truetype');
+}
