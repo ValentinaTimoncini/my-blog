@@ -1,7 +1,10 @@
 :root{
+    --white: #ffffff;
     --pink: rgb(255, 122, 145);
     --pinkbg: rgba(255, 136, 156, 0.2);
-    --text: #222;
+    --bg: #fff8f8;
+    --text: #000000;
+    --gray: #808080;
 }
 *,
 *::before,
@@ -10,6 +13,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+::-moz-selection { /* Code for Firefox */
+    color: var(--bg);
+    background: var(--pink);
+}
+
+::selection {
+    color: var(--bg);
+    background: var(--pink);
+}
 /*GENERAL CSS*/
 a{
     text-decoration: none;
@@ -17,11 +29,14 @@ a{
 img{
     display: block;
 }
-
+mark{
+    background-color: transparent;
+    color: var(--pink);
+}
 /*CUSTOM*/
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: var(--pinkbg);
+    background-color: var(--bg);
 }
 nav{
     display: flex;
@@ -29,17 +44,30 @@ nav{
     align-items: center;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 }
-nav .logo{
-    border: 2px solid var(--pink);
-    padding: 10px;
-    background-color: var(--pinkbg);
-    font-size: 1rem;
+nav .logo .letters{
+    background-color: var(--pink);
+    color: var(--bg);
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    border-radius: 7px;
+}
+.logo .letter{
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
     font-weight: bolder;
+    width: 50%;
+    transition: all .23s linear;
 }
-nav .logo a{
-    color: var(--text);
+nav .logo:hover .letter{
+    font-size: 1.5rem;
 }
 nav .nav-menu{
     list-style: none;
@@ -58,21 +86,109 @@ nav .bunny{
 .bunny img{
     width: 100%;
     height: 100%;
+    transition: all .33s linear;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.bunny img:hover{
+    transform: scale(.92);
+}
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.jumbo{
+    display: flex;
+    padding: 20px 0;
+}
+.main-image{
+    width: 40%;
+}
+.sabrina{
+    border-radius: 14px;
+    border: 2px solid var(--pink);
+    transition: all .33s ease-in;
+    width: 100%;
+}
+.sabrina:hover{
+    border-width: 10px;
+}
+.content{
+    width: 60%;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+}
+.descr{
+    padding-top: 30px;
+    padding-left: 50px;
+    position: relative;
+    line-height: 30px;
+}
+p{
+    color: var(--gray);
+}
+.section-name{
+    letter-spacing: 10px;
+    position: absolute;
+    right: calc(100% - 50px);
+    top: 70px;
+    transform: rotate(90deg) translateY(-50%);
+}
+.section-name::after{
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    background-color: var(--text);
+    transform: translateY(-50%);
+}
+.button {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--gray);
+    color: var(--text);
+    background-color: transparent;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .25s linear;
+    margin-top: 20px;
+}
+.button:hover{
+    background-color: var(--pink);
+    color: var(--bg);
+    border-color : var(--pink);
+}
+.cards{
+    display: flex;
+    column-gap: 70px;
+    margin-top: 30px;
+}
+.card{
+    border: 1px solid var(--gray);
+    padding: 35px 10px;
+    text-align: center;
+    width: 33%;
+    border-radius: 14px;
+}
+h2{
+    margin-bottom: 20px;
+}
+.card .button{
+    margin: 35px auto 0;
+}
 
 @font-face {
     font-family: 'Poppins';

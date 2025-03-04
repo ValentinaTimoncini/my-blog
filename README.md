@@ -1,4 +1,4 @@
-# Benvenuto nel mio blog sui conigli e i miei hobby!
+# Benvenuto nel mio blog su i miei hobby!
 
 Ciao! Questo è il mio spazio personale dove condividerò con te la mia passione per i conigli e i vari hobby che coltivo. Qui troverai articoli, consigli, storie divertenti e molto altro ancora, tutto dedicato ai miei amici pelosi e alle cose che mi appassionano.
 
