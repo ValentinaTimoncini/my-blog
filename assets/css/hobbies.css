@@ -1,0 +1,39 @@
+.proofs{
+    margin: 20px 0;
+    display: flex;
+}
+.proofs aside{
+    width: 40%;
+}
+.proofs article{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 40px;
+}
+.proofs article.left{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.proofs .bunny-img{
+    width: 100%;
+    display: block;
+}
+.text-center{
+    text-align: center;
+}
+.left .descr{
+    padding-left: 0;
+    padding-right: 50px;
+}
+.left .section-name{
+    left: calc(100% - 40px);
+    top: 25px;
+}
+.left .section-name::after{
+    left: calc(100% + 120px);
+    top: 50%;
+}

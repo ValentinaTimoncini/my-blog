@@ -108,6 +108,8 @@ main{
     border: 2px solid var(--pink);
     transition: all .33s ease-in;
     width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 .sabrina:hover{
     border-width: 10px;
@@ -189,7 +191,13 @@ h2{
 .card .button{
     margin: 35px auto 0;
 }
-
+footer{
+    text-align: center;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-size: .9rem;
+}
 @font-face {
     font-family: 'Poppins';
     src: url(/assets/fonts/Poppins-Regular.ttf) format('truetype');
